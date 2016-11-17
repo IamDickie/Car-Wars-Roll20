@@ -1,8 +1,8 @@
 <html>
     <!-- INSERT IMAGE WITH LOGO -->
-    
     <!-- BASIC DETAILS -->
-    <div>
+    <div class="character-details">
+        
         <table class="basic-details" border="1">
             <tr>
                 <th>Driver Name</th>
@@ -29,15 +29,17 @@
     <!-- BROKEN RADIO BUTTONS -->
     <div class="sheet-selection">
     
-        <input type="radio" name="sheet_page" class="sheet-tab sheet-tab1" value="1" title="Skills" checked="checked" />
+        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Skills" checked="checked" />
         <span class="sheet-tab sheet-tab1">Skills</span>
-        <input type="radio" name="sheet_page" class="sheet-tab sheet-tab2" value="2" title="Car" />
+        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Car" />
         <span class="sheet-tab sheet-tab1">Car</span>
+        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3" title="Possessions" />
+        <span class="sheet-tab sheet-tab1">Possessions</span>
     
     </div>
     
     <!-- SKILLS TABLE -->
-    <div class="sheet-section-skills">
+    <div class="sheet-tab1">
         
         <table class="skills-table" border="1">
             <tr>
@@ -156,9 +158,18 @@
     </div>
     
     <!-- CAR RECORD SHEET -->
-    <div class="sheet-section-car">
+    <div class="sheet-tab2">
+    
         <p>Placeholder</p>
         <p>No clue why this isn't working. I don't know if it is a CSS thing that I have not figured out how to read better or some other issue.</p>
+    
+    </div>
+    
+    <!-- GEAR TAB -->
+    <div class="sheet-tab3">
+        
+        <p>Another placeholder!</p>
+    
     </div>
     
 </html>
