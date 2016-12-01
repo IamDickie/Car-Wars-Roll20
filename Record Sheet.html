@@ -26,7 +26,8 @@
     
     </div>
     
-    <!-- BROKEN RADIO BUTTONS -->
+    <!-- PAGE RADIO BUTTONS -->
+    
     <input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Skills" checked="checked" />
     <span class="sheet-tab sheet-tab1">Skills</span>
     <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Vehicle" />
@@ -155,9 +156,151 @@
     
     <!-- CAR RECORD SHEET -->
     <div class="sheet-section-vehicle">
-    
-        <p>Placeholder</p>
         
+        <table class="car-name">
+            <th>Vehicle Name:</th>
+            <td><input type="text" name="attr_carname" value="" /></td>
+        </table>
+        
+        <table class="car-stats">
+                <tr>
+                <th>Body:</th>
+                <td><input type="text" name="attr_carbod" value="" /></td>
+                <th>Weight:</th>
+                <td><input type="number" name="attr_carwgt" value="" /></td>
+            </tr>
+            <tr>
+                <th>Chassis:</th>
+                <td><input type="text" name="attr_carchas" value="" /></td>
+                <th>Cost:</th>
+                <td><input type="number" name="attr_carcost" value="" /></td>
+            </tr>
+            <tr>
+                <th>Suspension:</th>
+                <td><input type="text" name="attr_carsus" value="" /></td>
+                <th>Power Plant:</th>
+                <td><input type="text" name="attr_carpower" value="" /></td>
+            </tr>
+        </table>
+        
+        <table class="car-skill-speed">
+            <tr>
+                <th>Handling Class:</th>
+                <td><input type="number" name="attr_carhc" value="" /></td>
+                <th>Acceleration:</th>
+                <td><input type="number" name="attr_caracc" value="" /></td>
+            </tr>
+            <tr>
+                <th>Top Speed:</th>
+                <td><input type="number" name="attr_cartspd" value="" /></td>
+                <th>Cruising Speed:</th>
+                <td><input type="number" name="attr_carcspd" value="" /></td>
+            </tr>
+            <tr>
+                <th>Driver Skill:</th>
+                <td><input type="number" name="attr_caracc" value="" /></td>
+                <th>Gunner Skill:</th>
+                <td><input type="number" name="attr_caracc" value="" /></td>
+            </tr>
+        </table>
+            
+        <table class="car-armor">
+                
+            <tr>
+                <th>Armor Type:</th>
+                <td><input type="text" name="attr_caracc" value="" /></td>
+            </tr>
+            
+            <tr>
+                <th>Front:</th>
+                <td><input type="number" name="attr_armfmax" value=""</td>
+                /
+                <td><input type="number" name="attr_armfcur" value="" /></td>
+            </tr>
+            <tr>
+                <th>Right:</th>
+                <td><input type="number" name="attr_armfmax" value=""</td>
+                /
+                <td><input type="number" name="attr_armfcur" value="" /></td>
+            </tr>
+            <tr>
+                <th>Left:</th>
+                <td><input type="number" name="attr_armfmax" value=""</td>
+                /
+                <td><input type="number" name="attr_armfcur" value="" /></td>
+            </tr>
+            <tr>
+                <th>Rear:</th>
+                <td><input type="number" name="attr_armfmax" value=""</td>
+                /
+                <td><input type="number" name="attr_armfcur" value="" /></td>
+            </tr>
+            <tr>
+                <th>Top/Turret:</th>
+                <td><input type="number" name="attr_armfmax" value=""</td>
+                /
+                <td><input type="number" name="attr_armfcur" value="" /></td>
+            </tr>
+            <tr>
+                <th>Underside:</th>
+                <td><input type="number" name="attr_armfmax" value=""</td>
+                /
+                <td><input type="number" name="attr_armfcur" value="" /></td>
+            </tr>
+        
+            <tr>
+                <th>Tire Type:</th>
+                <td><input type="text" name="attr_tiretype" value="" /></td>
+            </tr>
+                
+            <tr>
+                <th>Tire DPs:</th>
+                <td><input type="number" name="attr_tiredpmax" value="" />
+                /
+                <td><input type="number" name="attr_tiredpcur" value="" /></td>
+            </tr>
+                
+        </table>
+            
+        <table class="car-weapons">
+                
+            <tr>
+                <th>Name</th>
+                <th>Effect</th>
+                <th>To Hit</th>
+                <th>Dam</th>
+                <th>Max DP</th>
+                <!-- Is there a way to change font to strikethrough if Cur DP is 0? -->
+                <th>Cur DP</th>
+                <th>Max Shots</th>
+                <th>Cur Shots</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="attr_CWname" value="" /></td>
+                <td><input type="text" name="attr_CWeffect" value="" /></td>
+                <td><input type="number" name="attr_tohit" value="" /></td>
+                <td><input type="text" name="attr_CWdam" value="" /></td>
+                <td><input type="number" name="attr_CWmaxdp" value="" /></td>
+                <td><input type="number" name="attr_CWcurdp" value="" /></td>
+                <td><input type="number" name="attr_CWmaxshots" value="" /></td>
+                <td><input type="number" name="attr_CWcurshots" value="" /></td>
+            </tr>
+                
+        </table>
+            
+        <fieldset class="car-weapons-repeating">
+            <tr>
+                <td><input type="text" name="attr_CWname1" value="" /></td>
+                <td><input type="text" name="attr_CWeffect1" value="" /></td>
+                <td><input type="number" name="attr_tohit1" value="" /></td>
+                <td><input type="text" name="attr_CWdam1" value="" /></td>
+                <td><input type="number" name="attr_CWmaxdp1" value="" /></td>
+                <td><input type="number" name="attr_CWcurdp1" value="" /></td>
+                <td><input type="number" name="attr_CWmaxshots1" value="" /></td>
+                <td><input type="number" name="attr_CWcurshots1" value="" /></td>
+            </tr>
+        </fieldset>
+            
     </div>
     
     <!-- GEAR TAB -->
