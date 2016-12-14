@@ -1,3 +1,9 @@
+h4 {
+    font-style:bold;
+    text-align:center;
+    border:2px solid black;
+}
+
 /*Page buttons*/
 div[class^="sheet-section"] { 	
 	display: none;
